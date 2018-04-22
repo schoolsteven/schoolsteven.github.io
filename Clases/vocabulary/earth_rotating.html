@@ -1,0 +1,22 @@
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+       <a-scene embedded arjs='trackingMethod: best;'>
+           <a-assets>
+        <img id='1' src='http://www.adictivo365.com/wp-content/uploads/2016/11/mapa-mundi.gif'/>
+       
+</a-assets>
+      <a-anchor hit-testing-enabled='true'>
+              <a-sphere material='src: #1;' 
+              position="0 0.5 0" radius="3" segments-height="53">
+             <a-animation attribute="rotation"
+               dur="10000"
+               to="0 360 0"
+               easing= "linear"     
+               repeat="indefinite">
+        </a-animation>
+</a-sphere>
+</a-anchor>
+<a-camera-static/>
+</a-scene>
+</body>
