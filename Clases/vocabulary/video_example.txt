@@ -8,12 +8,14 @@
    <!-- create your content here. just a box for now -->
 <a-assets>
     <!-- No loop. -->
-    <video id="my-video" src="https://schoolsteven.github.io/Clases/vocabulary/Videos/video.mp4" autoplay="true" autoplay loop="true">
+    <video id="my-video" src="https://schoolsteven.github.io/Clases/vocabulary/Videos/video.mp4">
+       
   </a-assets>
 
-  <a-entity geometry="primitive: plane" material="src: #my-video" rotation="-90 0 0"></a-entity>  
+  <a-entity geometry="primitive: plane" material="src: #my-video" rotation="-90 0 0" ></a-entity>  
   <!-- define a camera which will move according to the marker position -->
-    <a-marker-camera preset='hiro'></a-marker-camera>
+   <script> addEventListener ('click', function () { document.querySelector('video').play(); }); </script>
+       <a-marker-camera preset='hiro'></a-marker-camera>
 </a-scene>
 </body>
 </html>
