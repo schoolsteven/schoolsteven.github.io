@@ -12,11 +12,10 @@
        
   </a-assets>
 
-  <a-entity geometry="primitive: plane" material="src: #my-video" begin="click" rotation="-90 0 0" ></a-entity>  
+  <a-entity geometry="primitive: plane" material="src: #my-video" rotation="-90 0 0" ></a-entity>  
   <!-- define a camera which will move according to the marker position -->
-   <script> addEventListener ('touch', function () { document.querySelector('video').play(); }); </script>
-   <script> addEventListener ('touch', function () { document.querySelector('video').stop(); }); </script>
-    <a-marker-camera preset='hiro'></a-marker-camera>
+   <script> addEventListener ('click', function () { document.querySelector('video').play(); }); </script>
+       <a-marker-camera preset='hiro'></a-marker-camera>
 </a-scene>
 </body>
 </html>
